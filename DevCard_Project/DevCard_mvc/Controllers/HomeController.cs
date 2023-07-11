@@ -1,4 +1,5 @@
-﻿using DevCard_mvc.Models;
+﻿using System.Collections.Generic;
+using DevCard_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,12 +7,14 @@ namespace DevCard_mvc.Controllers
 {
     public class HomeController : Controller
     {
+      //  public List<Matn> pro = new List<Matn>();
         public HomeController()
         {
         }
-
+       
         public IActionResult Index()
         {
+           // Matn.Id = "";
             return View();
         }
 
